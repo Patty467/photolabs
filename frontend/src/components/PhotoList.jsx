@@ -1,18 +1,18 @@
-import React, { useState } from "react";
+import React from "react";
 import PhotoListItem from './PhotoListItem';
 import "../styles/PhotoList.scss";
-import photos from "mocks/photos.js";
 
 const PhotoList = (props) => {
   const {
     favorites,
     toggleFavorite,
-    openModal
+    openModal,
+    photoData
   } = props;
 
   return (
     <ul className="photo-list">
-      {photos.map(photo => (
+      {photoData.map(photo => (
         <PhotoListItem 
         photo={photo} 
         toggleFavorite={toggleFavorite}

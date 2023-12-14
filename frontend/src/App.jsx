@@ -8,11 +8,14 @@ const App = () => {
     state: {
       favorites,
       isModalOpen,
-      selectedPhoto
+      selectedPhoto,
+      photoData,
+      topicData,
     },
     openModal,
     closeModal,
-    toggleFavorite
+    toggleFavorite,
+    changeTopic
   } = useApplicationData();
 
   return (
@@ -21,9 +24,12 @@ const App = () => {
         favorites={favorites}
         isModalOpen={isModalOpen}
         selectedPhoto={selectedPhoto}
+        photoData={photoData}
         openModal={openModal}
         closeModal={closeModal}
         toggleFavorite={toggleFavorite}
+        topicData={topicData}
+        changeTopic={changeTopic}
       />
     </div>
   );

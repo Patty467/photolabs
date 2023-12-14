@@ -5,11 +5,12 @@ const TopicListItem = (props) => {
   const {
     id,
     slug,
-    title
+    title,
+    onClick
   } = props
 
   return (
-    <div className="topic-list__item">
+    <div className="topic-list__item" onClick={onClick}>
       <p>{title}</p>
     </div>
   );

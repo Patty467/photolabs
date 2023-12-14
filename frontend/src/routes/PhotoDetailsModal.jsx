@@ -9,7 +9,8 @@ const PhotoDetailsModal = (props) => {
     closeModal,
     photo,
     favorites,
-    toggleFavorite
+    toggleFavorite,
+    photoData
   } = props
 
   const isFavorited = favorites.includes(photo.id);
@@ -36,7 +37,12 @@ const PhotoDetailsModal = (props) => {
       </div>
       <div className='photo-modal__list'>
         <h2>Similar Photos</h2>
-        <PhotoList favorites={favorites} toggleFavorite={toggleFavorite} />
+        <PhotoList 
+        favorites={favorites} 
+        toggleFavorite={toggleFavorite} 
+        photoData={photoData}
+        openModal={() => {}}
+        />
       </div>
     </div>
   )
