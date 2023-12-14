@@ -33,6 +33,8 @@ npm start
 Once the app has launched you can:
 
 Click a heart icon on any photo to favourite it
+
 Click on a photo to view it in a modal where similar photos will be displayed
+
 Click on a topic in the navigation bar to filter photos
 
